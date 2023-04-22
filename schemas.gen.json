@@ -13,7 +13,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props": {
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props": {
       "type": "object",
       "properties": {
         "repo": {
@@ -37,7 +37,7 @@
         "branch",
         "path"
       ],
-      "title": "deco-sites/start/functions/LoadGitHubRaw.ts@Props"
+      "title": "deco-sites/kawsar-design/functions/LoadGitHubRaw.ts@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
       "$ref": "#/root/pages",
@@ -277,7 +277,7 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props": {
       "type": "object",
       "properties": {
         "enableInspectVSCode": {
@@ -289,9 +289,9 @@
         }
       },
       "required": [],
-      "title": "deco-sites/start/sections/GetStarted.tsx@Props"
+      "title": "deco-sites/kawsar-design/sections/GetStarted.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWQudHN4@Props": {
       "type": "object",
       "properties": {
         "title": {
@@ -335,7 +335,40 @@
         "styleUrls",
         "themeColor"
       ],
-      "title": "deco-sites/start/sections/Head.tsx@Props"
+      "title": "deco-sites/kawsar-design/sections/Head.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "title": "Email"
+        },
+        "emailText": {
+          "type": "string",
+          "title": "Email Text"
+        },
+        "linkedin": {
+          "type": "string",
+          "title": "Linkedin"
+        },
+        "dribbble": {
+          "type": "string",
+          "title": "Dribbble"
+        },
+        "instagram": {
+          "type": "string",
+          "title": "Instagram"
+        }
+      },
+      "required": [
+        "email",
+        "emailText",
+        "linkedin",
+        "dribbble",
+        "instagram"
+      ],
+      "title": "deco-sites/kawsar-design/sections/Header.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -517,12 +550,12 @@
       "required": [],
       "title": "deco-cx/live/flags/everyone.ts@EveryoneConfig"
     },
-    "ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==": {
-      "title": "deco-sites/start/functions/LoadGitHubRaw.ts",
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz": {
+      "title": "deco-sites/kawsar-design/functions/LoadGitHubRaw.ts",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz@Props"
         }
       ],
       "required": [
@@ -532,9 +565,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/functions/LoadGitHubRaw.ts"
+            "deco-sites/kawsar-design/functions/LoadGitHubRaw.ts"
           ],
-          "default": "deco-sites/start/functions/LoadGitHubRaw.ts"
+          "default": "deco-sites/kawsar-design/functions/LoadGitHubRaw.ts"
         }
       }
     },
@@ -706,12 +739,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==": {
-      "title": "deco-sites/start/sections/GetStarted.tsx",
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
+      "title": "deco-sites/kawsar-design/sections/GetStarted.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props"
         }
       ],
       "required": [
@@ -721,18 +754,18 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/sections/GetStarted.tsx"
+            "deco-sites/kawsar-design/sections/GetStarted.tsx"
           ],
-          "default": "deco-sites/start/sections/GetStarted.tsx"
+          "default": "deco-sites/kawsar-design/sections/GetStarted.tsx"
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==": {
-      "title": "deco-sites/start/sections/Head.tsx",
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWQudHN4": {
+      "title": "deco-sites/kawsar-design/sections/Head.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWQudHN4@Props"
         }
       ],
       "required": [
@@ -742,9 +775,30 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/start/sections/Head.tsx"
+            "deco-sites/kawsar-design/sections/Head.tsx"
           ],
-          "default": "deco-sites/start/sections/Head.tsx"
+          "default": "deco-sites/kawsar-design/sections/Head.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g=": {
+      "title": "deco-sites/kawsar-design/sections/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/kawsar-design/sections/Header.tsx"
+          ],
+          "default": "deco-sites/kawsar-design/sections/Header.tsx"
         }
       }
     },
@@ -974,7 +1028,7 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9mdW5jdGlvbnMvTG9hZEdpdEh1YlJhdy50cw=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2Z1bmN0aW9ucy9Mb2FkR2l0SHViUmF3LnRz"
         }
       ]
     },
@@ -1025,10 +1079,13 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9HZXRTdGFydGVkLnRzeA=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydC9zZWN0aW9ucy9IZWFkLnRzeA=="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g="
         }
       ]
     },

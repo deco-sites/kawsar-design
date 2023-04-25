@@ -370,6 +370,44 @@
       ],
       "title": "deco-sites/kawsar-design/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "profileTitle": {
+          "type": "string",
+          "title": "Profile Title"
+        },
+        "profileText": {
+          "type": "string",
+          "title": "Profile Text"
+        },
+        "button": {
+          "type": "string",
+          "title": "Button"
+        },
+        "buttonURL": {
+          "type": "string",
+          "title": "Button U R L"
+        }
+      },
+      "required": [
+        "image",
+        "profileTitle",
+        "profileText",
+        "button",
+        "buttonURL"
+      ],
+      "title": "deco-sites/kawsar-design/sections/Profile.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -802,6 +840,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4": {
+      "title": "deco-sites/kawsar-design/sections/Profile.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/kawsar-design/sections/Profile.tsx"
+          ],
+          "default": "deco-sites/kawsar-design/sections/Profile.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "$live/matchers/MatchAlways.ts",
       "type": "object",
@@ -1086,6 +1145,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4"
         }
       ]
     },

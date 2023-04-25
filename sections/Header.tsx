@@ -13,12 +13,6 @@ export default function Header({
   dribbble,
   instagram,
 }: Props) {
-  const socialMedia = [
-    { name: "Linkedin", href: "/" },
-    { name: "Dribbble", href: "/" },
-    { name: "Instagram", href: "/" },
-  ];
-
   return (
     <section>
       <header class="w-full flex items-center bg-black">
@@ -57,7 +51,9 @@ export default function Header({
                     target="_blank"
                     class="flex hover:text-gray-300"
                   >
-                    <span class="flex hidden md:block pr-[12px]">Linkedin&nbsp;&nbsp;/</span>
+                    <span class="flex hidden md:block pr-[12px]">
+                      Linkedin&nbsp;&nbsp;/
+                    </span>
                     <span class="md:hidden pr-[12px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +72,9 @@ export default function Header({
                     target="_blank"
                     class="flex hover:text-gray-300"
                   >
-                    <span class="flex hidden md:block pr-[12px]">Dribble&nbsp;&nbsp;/</span>
+                    <span class="flex hidden md:block pr-[12px]">
+                      Dribble&nbsp;&nbsp;/
+                    </span>
                     <span class="md:hidden pr-[12px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

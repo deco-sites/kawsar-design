@@ -31,7 +31,7 @@ export default function Profile(props: Props) {
             {props.profileText}
           </h1>
 
-          <div class="text-[16px]">
+          <div class="flex items-center justify-center text-[16px]">
             <a
               href={props.buttonURL}
               target="_blank"
@@ -40,7 +40,6 @@ export default function Profile(props: Props) {
               <span>
                 {props.button}
               </span>
-              <img src={props.buttonSVG} class="pl-[8px] w-7" />
             </a>
           </div>
         </div>

@@ -337,43 +337,70 @@
       ],
       "title": "deco-sites/kawsar-design/sections/Head.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "email": {
-          "type": "string",
-          "title": "Email"
-        },
-        "emailText": {
-          "type": "string",
-          "title": "Email Text"
-        },
-        "linkedin": {
-          "type": "string",
-          "title": "Linkedin"
-        },
-        "dribbble": {
-          "type": "string",
-          "title": "Dribbble"
-        },
-        "instagram": {
-          "type": "string",
-          "title": "Instagram"
-        }
-      },
-      "required": [
-        "email",
-        "emailText",
-        "linkedin",
-        "dribbble",
-        "instagram"
-      ],
-      "title": "deco-sites/kawsar-design/sections/Header.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
       "format": "image-uri",
       "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Links": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "svg_logos": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Svg_logos"
+        }
+      },
+      "required": [
+        "link",
+        "title",
+        "svg_logos"
+      ],
+      "title": "Links"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Links[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Links"
+      },
+      "title": "Links[]"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo"
+        },
+        "link_logo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Link_logo"
+        },
+        "text_logo": {
+          "type": "string",
+          "title": "Text_logo"
+        },
+        "link": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Links[]",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "logo",
+        "text_logo",
+        "link"
+      ],
+      "title": "deco-sites/kawsar-design/components/Header/Header.tsx@Props"
     },
     "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4@Props": {
       "type": "object",
@@ -824,7 +851,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0hlYWRlci50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Props"
         }
       ],
       "required": [

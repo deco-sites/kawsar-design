@@ -7,7 +7,6 @@ export interface Props {
   profileText: string;
   button: string;
   buttonURL: string;
-  buttonSVG: LiveImage;
 }
 
 export default function Profile(props: Props) {
@@ -31,7 +30,7 @@ export default function Profile(props: Props) {
             {props.profileText}
           </h1>
 
-          <div class="flex items-center justify-center text-[16px]">
+          <div class="text-[16px]">
             <a
               href={props.buttonURL}
               target="_blank"

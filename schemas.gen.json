@@ -424,10 +424,6 @@
         "buttonURL": {
           "type": "string",
           "title": "Button U R L"
-        },
-        "buttonSVG": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Button S V G"
         }
       },
       "required": [
@@ -435,8 +431,7 @@
         "profileTitle",
         "profileText",
         "button",
-        "buttonURL",
-        "buttonSVG"
+        "buttonURL"
       ],
       "title": "deco-sites/kawsar-design/components/Main/Profile.tsx@Props"
     },

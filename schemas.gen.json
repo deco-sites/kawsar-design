@@ -402,12 +402,12 @@
       ],
       "title": "deco-sites/kawsar-design/components/Header/Header.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4@Props": {
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9Qcm9maWxlLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "image": {
+        "profileImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Image"
+          "title": "Profile Image"
         },
         "profileTitle": {
           "type": "string",
@@ -424,16 +424,21 @@
         "buttonURL": {
           "type": "string",
           "title": "Button U R L"
+        },
+        "buttonSVG": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Button S V G"
         }
       },
       "required": [
-        "image",
+        "profileImage",
         "profileTitle",
         "profileText",
         "button",
-        "buttonURL"
+        "buttonURL",
+        "buttonSVG"
       ],
-      "title": "deco-sites/kawsar-design/sections/Profile.tsx@Props"
+      "title": "deco-sites/kawsar-design/components/Main/Profile.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -872,7 +877,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9Qcm9maWxlLnRzeA==@Props"
         }
       ],
       "required": [

@@ -435,6 +435,46 @@
       ],
       "title": "deco-sites/kawsar-design/components/Main/Profile.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TZXJ2aWNlcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "serviceText": {
+          "type": "string",
+          "title": "Service Text"
+        },
+        "card": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cardImg": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Card Img"
+              },
+              "cardTitle": {
+                "type": "string",
+                "title": "Card Title"
+              },
+              "cardText": {
+                "type": "string",
+                "title": "Card Text"
+              }
+            },
+            "required": [
+              "cardImg",
+              "cardTitle",
+              "cardText"
+            ]
+          },
+          "title": "Card"
+        }
+      },
+      "required": [
+        "serviceText",
+        "card"
+      ],
+      "title": "deco-sites/kawsar-design/components/Main/Services.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -888,6 +928,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NlcnZpY2VzLnRzeA==": {
+      "title": "deco-sites/kawsar-design/sections/Services.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TZXJ2aWNlcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/kawsar-design/sections/Services.tsx"
+          ],
+          "default": "deco-sites/kawsar-design/sections/Services.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "$live/matchers/MatchAlways.ts",
       "type": "object",
@@ -1175,6 +1236,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1Byb2ZpbGUudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NlcnZpY2VzLnRzeA=="
         }
       ]
     },

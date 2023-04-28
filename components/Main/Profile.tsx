@@ -12,13 +12,13 @@ export interface Props {
 export default function Profile(props: Props) {
   return (
     <section>
-      <main class="w-full bg-gray-900">
-        <div class="mx-auto flex flex-wrap items-center justify-center flex-col py-12 text-sm text-gray-400">
+      <main class="w-full bg-gray-900 border-t border-b">
+        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-gray-400">
           <div class="py-8">
             <img
               src={props.profileImage}
               alt="Photo Profile"
-              class="inline-block text-center w-24 h-24 rounded-full"
+              class="inline-block text-center w-32 h-32 rounded-full"
             />
           </div>
 
@@ -30,16 +30,12 @@ export default function Profile(props: Props) {
             {props.profileText}
           </h1>
 
-          <div class="text-[16px]">
-            <a
-              href={props.buttonURL}
-              target="_blank"
-              class="flex items-center justify-center bg-gray-900 inline-block rounded-sm border w-[216px] h-[69px] hover:(w-[194px] h-[62px] text-[14px] transition-all duration-300)"
-            >
-              <span>
-                {props.button}
-              </span>
-            </a>
+          <div class="flex items-center justify-center text-[16px]">
+            <button class="bg-gray-900 inline-block rounded-sm border w-[216px] h-[69px] hover:(w-[194px] h-[62px] text-[14px] transition-all duration-300)">
+              <a href={props.buttonURL} target="_blank" class="">
+                <span>{props.button}</span>
+              </a>
+            </button>
           </div>
         </div>
       </main>

@@ -424,6 +424,10 @@
         "buttonURL": {
           "type": "string",
           "title": "Button U R L"
+        },
+        "buttonIcon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Button Icon"
         }
       },
       "required": [

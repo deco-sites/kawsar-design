@@ -22,12 +22,12 @@ export default function Header(props: Props) {
   );
 
   return (
-    <header class="w-full flex items-center bg-gray-900">
-      <div class="mx-auto w-full md:px-10">
-        <nav class="flex items-center justify-between w-full h-[60px] text-sm text-black md:h-[80px]">
+    <header class="w-full flex items-center bg-primary">
+      <div class="mx-auto w-full md:px-10 ">
+        <nav class="flex items-center justify-between w-full h-[60px] text-sm text-secundary md:h-[80px] border-b border-gray-800">
           <a href={props.link_logo} class="flex items-center pl-[12px]">
-            <img src={props.logo} alt="Logo" class="w-8" />
-            <span class="pl-[12px] hover:text-gray-400">
+            <img src={props.logo} alt="Logo" class="h-5" />
+            <span class="pl-[12px] hover:text-gray-300">
               {props.text_logo}
             </span>
           </a>

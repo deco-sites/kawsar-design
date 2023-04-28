@@ -10,9 +10,10 @@ export default {
         "2xl": "1536px",
       },
       colors: {
-        primary: "#2FD180",
-        "primary-dark": "#003232",
-        "primary-light": "#C5FFE9",
+        primary: "#18181b",
+        "primary-dark": "#09090b",
+        "primary-light": "#a1a1aa",
+        secundary: "#71717a",
         transparent: "transparent",
       },
       fontFamily: {

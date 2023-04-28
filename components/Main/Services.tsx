@@ -19,29 +19,30 @@ export default function Services({ serviceText, card }: Props) {
     <section>
       <div class="w-full bg-gray-900 border-t border-b">
         <div class="mt-28 mb-24 relative">
+
           <h3 class="pb-8 text-2xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {serviceText}
           </h3>
 
-          <div id={id} class="flex justify-between max-w-[1140px] m-auto overflow-hidden">
+          <div class="h-full">
+            <div id={id} class="container max-w-[1024px] mx-auto overflow-hidden lg:px-10">
 
-            <div class="grid grid-cols-2 sm:(flex)" data-slider-content>
-              {card.map((card, idx) => {
-                return (
+              <div class="grid grid-cols-2 gap-3 sm:(flex) overflow-hidden" data-slider-content>
+                {card.map((card, idx) => {
+                  return (
 
-                  <div id={`${id}-${idx}`} class="mx-5 p-8 border grid grid-cols-1 h-80 w-56">
-                    <div class="flex justify-start items-center">
+                    <div id={`${id}-${idx}`} class="p-4 grid grid-cols-1 h-80 w-56 border rounded-md">
+                      <div class="flex flex-col justify-end items-start">
                         <img src={card.cardImg} class="h-10" />
+                        <h4 class="font-semibold mt-4">{card.cardTitle}</h4>
+                        <p class="text-sm overflow-hidden overflow-ellipsis mt-4">{card.cardText}</p>
+                      </div>                       
                     </div>
-                    
-                    <h4 class="font-semibold ">{card.cardTitle}</h4>
-                    <p class="mt-auto">{card.cardText}</p>
-                  </div>
+                  );
+                })}
+              </div>
 
-                );
-              })}
             </div>
-
           </div>
 
         </div>

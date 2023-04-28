@@ -9,8 +9,9 @@ import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$$$$0 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$1 from "./sections/Head.tsx";
 import * as $$$$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$$$3 from "./sections/Profile.tsx";
-import * as $$$$$$$$4 from "./sections/Services.tsx";
+import * as $$$$$$$$3 from "./sections/NextProject.tsx";
+import * as $$$$$$$$4 from "./sections/Profile.tsx";
+import * as $$$$$$$$5 from "./sections/Services.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -60,8 +61,9 @@ const manifest = {
     "deco-sites/kawsar-design/sections/GetStarted.tsx": $$$$$$$$0,
     "deco-sites/kawsar-design/sections/Head.tsx": $$$$$$$$1,
     "deco-sites/kawsar-design/sections/Header.tsx": $$$$$$$$2,
-    "deco-sites/kawsar-design/sections/Profile.tsx": $$$$$$$$3,
-    "deco-sites/kawsar-design/sections/Services.tsx": $$$$$$$$4,
+    "deco-sites/kawsar-design/sections/NextProject.tsx": $$$$$$$$3,
+    "deco-sites/kawsar-design/sections/Profile.tsx": $$$$$$$$4,
+    "deco-sites/kawsar-design/sections/Services.tsx": $$$$$$$$5,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,

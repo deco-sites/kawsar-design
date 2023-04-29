@@ -19,7 +19,7 @@ export default function Navlink({ link, title, svg_logos }: Props): VNode {
         <span class="flex hidden md:block pr-[12px]">
           {title}
         </span>
-        <img src={svg_logos} alt="Logo" class="md:hidden h-4 pr-[12px]" />
+        <img src={svg_logos} alt="Logo" class="md:hidden h-4 pr-[12px] "/>
       </a>
     </li>
   );

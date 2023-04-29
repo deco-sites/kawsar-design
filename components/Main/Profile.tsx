@@ -7,7 +7,7 @@ export interface Props {
   profileText: string;
   button: string;
   buttonURL: string;
-  buttonIcon?: LiveImage
+  buttonIcon?: LiveImage;
 }
 
 export default function Profile(props: Props) {
@@ -33,11 +33,14 @@ export default function Profile(props: Props) {
 
           <div class="flex items-center justify-center text-[16px]">
             <button class="bg-primary rounded-sm border w-[216px] h-[69px] hover:(w-[194px] h-[62px] text-[14px] transition-all duration-300)">
-              <a href={props.buttonURL} target="_blank" class="flex justify-center items-center">
+              <a
+                href={props.buttonURL}
+                target="_blank"
+                class="flex justify-center items-center"
+              >
                 <span>{props.button}</span>
-                
-                  <img src={props.buttonIcon} class="ml-2 h-4" />
-                
+
+                <img src={props.buttonIcon} class="ml-2 h-4" />
               </a>
             </button>
           </div>

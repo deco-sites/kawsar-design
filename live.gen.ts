@@ -6,17 +6,17 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$0 from "./sections/Services.tsx";
 import * as $$$$$$$$1 from "./sections/Head.tsx";
-import * as $$$$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$$$3 from "./sections/NextProject.tsx";
-import * as $$$$$$$$4 from "./sections/Profile.tsx";
-import * as $$$$$$$$5 from "./sections/Services.tsx";
+import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$3 from "./sections/Profile.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/NextProject.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
-import * as $live_inspect from "$live/routes/live/inspect.ts";
+import * as $live_inspect from "$live/routes/live/inspect/[...block].ts";
 import * as $live_meta from "$live/routes/live/_meta.ts";
 import * as $live_previews from "$live/routes/live/previews/[...block].tsx";
 import * as $live_catchall from "$live/routes/[...catchall].tsx";
@@ -49,7 +49,7 @@ const manifest = {
     "./routes/index.tsx": $live_catchall,
     "./routes/live/_meta.ts": $live_meta,
     "./routes/live/editorData.ts": $live_editorData,
-    "./routes/live/inspect.ts": $live_inspect,
+    "./routes/live/inspect/[...block].ts": $live_inspect,
     "./routes/live/invoke/index.ts": $live_invoke,
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/live/workbench.ts": $live_workbench,
@@ -58,12 +58,12 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$0,
     "$live/sections/Slot.tsx": i1$$$1,
     "$live/sections/UseSlot.tsx": i1$$$2,
-    "deco-sites/kawsar-design/sections/GetStarted.tsx": $$$$$$$$0,
+    "deco-sites/kawsar-design/sections/GetStarted.tsx": $$$$$$$$2,
     "deco-sites/kawsar-design/sections/Head.tsx": $$$$$$$$1,
-    "deco-sites/kawsar-design/sections/Header.tsx": $$$$$$$$2,
-    "deco-sites/kawsar-design/sections/NextProject.tsx": $$$$$$$$3,
-    "deco-sites/kawsar-design/sections/Profile.tsx": $$$$$$$$4,
-    "deco-sites/kawsar-design/sections/Services.tsx": $$$$$$$$5,
+    "deco-sites/kawsar-design/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/kawsar-design/sections/NextProject.tsx": $$$$$$$$5,
+    "deco-sites/kawsar-design/sections/Profile.tsx": $$$$$$$$3,
+    "deco-sites/kawsar-design/sections/Services.tsx": $$$$$$$$0,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,

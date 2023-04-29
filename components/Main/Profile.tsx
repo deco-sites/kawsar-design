@@ -32,7 +32,7 @@ export default function Profile(props: Props) {
           </h1>
 
           <div class="flex items-center justify-center text-[16px]">
-            <button class="bg-primary rounded-sm border w-[216px] h-[69px] hover:(w-[194px] h-[62px] text-[14px] transition-all duration-300)">
+            <button class="bg-primary rounded-sm border w-[216px] h-[69px] transition-all duration-500 ease-in-out hover:scale-90">
               <a
                 href={props.buttonURL}
                 target="_blank"

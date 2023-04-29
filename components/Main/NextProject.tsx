@@ -12,13 +12,13 @@ export default function NextProject(props: Props) {
   return (
     <section>
       <div class="w-full bg-primary lg:px-20 ">
-        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary pt-28 border-t border-gray-800">
+        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-20 text-sm text-secundary border-t border-gray-800">
           <h1 class="mb-8 text-4xl sm:text-6xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {props.profileText}
           </h1>
 
           <div class="flex items-center justify-center text-[16px]">
-            <button class="bg-primary rounded-sm border w-[216px] h-[69px] hover:(w-[194px] h-[62px] text-[14px] transition-all duration-300)">
+            <button class="bg-primary rounded-sm border w-[216px] h-[69px] transition-all duration-500 ease-in-out hover:scale-90">
               <a
                 href={props.buttonURL}
                 target="_blank"

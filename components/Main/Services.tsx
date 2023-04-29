@@ -18,7 +18,7 @@ export default function Services({ serviceText, card }: Props) {
   return (
     <section>
       <div class="w-full bg-primary border-b border-gray-800">
-        <div class="mt-28 mb-24 relative">
+        <div class="pt-28 mb-24 relative">
           <h3 class="pb-8 text-2xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {serviceText}
           </h3>

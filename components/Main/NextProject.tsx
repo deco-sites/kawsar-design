@@ -13,8 +13,8 @@ export interface Props {
 export default function NextProject(props: Props) {
     return (
       <section>
-        <main class="w-full bg-primary border-b border-gray-800">
-          <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary">
+        <div class="w-full bg-primary border-b border-gray-800">
+          <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary pt-28">
   
             <h1 class="mb-8 text-4xl sm:text-6xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
               {props.profileText}
@@ -31,7 +31,7 @@ export default function NextProject(props: Props) {
               </button>
             </div>
           </div>
-        </main>
+        </div>
       </section>
     );
   }

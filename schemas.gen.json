@@ -276,6 +276,59 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci50c3g=@Links": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "svg_logos": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Svg_logos"
+        }
+      },
+      "required": [
+        "link",
+        "title",
+        "svg_logos"
+      ],
+      "title": "Links"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci50c3g=@Links[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci50c3g=@Links"
+      },
+      "title": "Links[]"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "copyright": {
+          "type": "string",
+          "title": "Copyright"
+        },
+        "link": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci50c3g=@Links[]",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "copyright",
+        "link"
+      ],
+      "title": "deco-sites/kawsar-design/components/Footer/Footer.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -335,11 +388,6 @@
         "themeColor"
       ],
       "title": "deco-sites/kawsar-design/sections/Head.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci50c3g=@Links": {
       "type": "object",
@@ -874,6 +922,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0Zvb3Rlci50c3g=": {
+      "title": "deco-sites/kawsar-design/sections/Footer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/kawsar-design/sections/Footer.tsx"
+          ],
+          "default": "deco-sites/kawsar-design/sections/Footer.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4": {
       "title": "deco-sites/kawsar-design/sections/GetStarted.tsx",
       "type": "object",
@@ -1275,6 +1344,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0Zvb3Rlci50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL0dldFN0YXJ0ZWQudHN4"

@@ -11,8 +11,8 @@ export interface Props {
 export default function NextProject(props: Props) {
   return (
     <section>
-      <div class="w-full bg-primary border-b border-gray-800">
-        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary pt-28">
+      <div class="w-full bg-primary lg:px-20 ">
+        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary pt-28 border-t border-gray-800">
           <h1 class="mb-8 text-4xl sm:text-6xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {props.profileText}
           </h1>

@@ -17,8 +17,8 @@ export default function Services({ serviceText, card }: Props) {
   id += "card";
   return (
     <section>
-      <div class="w-full bg-primary border-b border-gray-800">
-        <div class="pt-28 mb-24 relative">
+      <div class="w-full bg-primary ">
+        <div class="py-28 relative">
           <h3 class="pb-8 text-2xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {serviceText}
           </h3>
@@ -38,7 +38,7 @@ export default function Services({ serviceText, card }: Props) {
                       id={`${id}-${idx}`}
                       class="p-4 grid grid-cols-1 h-80 lg:w-56 border rounded-sm"
                     >
-                      <div class="flex flex-col justify-end items-start">
+                      <div class="flex flex-col justify-end items-start text-secundary">
                         <img src={card.cardImg} class="h-10" />
                         <h4 class="font-semibold mt-4">{card.cardTitle}</h4>
                         <p class="text-sm overflow-hidden overflow-ellipsis mb-4 mt-4">

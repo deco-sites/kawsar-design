@@ -14,7 +14,7 @@ export default function Profile(props: Props) {
   return (
     <section>
       <main class="w-full bg-primary border-b border-gray-800">
-        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary">
+        <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary md:px-24">
           <div class="py-8">
             <img
               src={props.profileImage}
@@ -27,7 +27,7 @@ export default function Profile(props: Props) {
             <span>{props.profileTitle}</span>
           </div>
 
-          <h1 class="mb-8 text-4xl sm:text-6xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
+          <h1 class="pb-6 mb-8 text-4xl sm:text-6xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {props.profileText}
           </h1>
 

@@ -20,6 +20,30 @@ export default {
         sans: ["Albert Sans", "sans-serif"],
         serif: ["serif"],
       },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '25%': { transform: 'translateX(-25%)' },
+          '50%': { transform: 'translateX(-50%)' },
+          '75%': { transform: 'translateX(-75%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '25%': { transform: 'translateX(75%)' },
+          '50%': { transform: 'translateX(50%)' },
+          '75%': { transform: 'translateX(25%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
+      variants: {
+        animation: ['responsive', 'hover'],
+      },
+      plugins: [],
     },
   },
 };

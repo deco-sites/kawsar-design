@@ -553,6 +553,46 @@
       ],
       "title": "deco-sites/kawsar-design/components/Main/Services.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Link"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "image"
+      ],
+      "title": "MediasLogos"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos"
+      },
+      "title": "MediasLogos[]"
+    },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "media": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos[]",
+          "title": "Media"
+        }
+      },
+      "required": [
+        "media"
+      ],
+      "title": "deco-sites/kawsar-design/components/Main/Slider.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -1069,6 +1109,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NsaWRlci50c3g=": {
+      "title": "deco-sites/kawsar-design/sections/Slider.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/kawsar-design/sections/Slider.tsx"
+          ],
+          "default": "deco-sites/kawsar-design/sections/Slider.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "$live/matchers/MatchAlways.ts",
       "type": "object",
@@ -1365,6 +1426,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NlcnZpY2VzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NsaWRlci50c3g="
         }
       ]
     },

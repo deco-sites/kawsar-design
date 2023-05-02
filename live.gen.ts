@@ -6,6 +6,7 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/Slider.tsx";
 import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
 import * as $$$$$$$$2 from "./sections/Head.tsx";
@@ -13,7 +14,7 @@ import * as $$$$$$$$3 from "./sections/Header.tsx";
 import * as $$$$$$$$4 from "./sections/NextProject.tsx";
 import * as $$$$$$$$5 from "./sections/Profile.tsx";
 import * as $$$$$$$$6 from "./sections/Services.tsx";
-import * as $$$$$$$$7 from "./sections/Slider.tsx";
+import * as $$$$$$$$7 from "./sections/SliderInfinite.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -56,6 +57,9 @@ const manifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/live/workbench.ts": $live_workbench,
   },
+  "islands": {
+    "./islands/Slider.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/PageInclude.tsx": i1$$$0,
     "$live/sections/Slot.tsx": i1$$$1,
@@ -67,7 +71,7 @@ const manifest = {
     "deco-sites/kawsar-design/sections/NextProject.tsx": $$$$$$$$4,
     "deco-sites/kawsar-design/sections/Profile.tsx": $$$$$$$$5,
     "deco-sites/kawsar-design/sections/Services.tsx": $$$$$$$$6,
-    "deco-sites/kawsar-design/sections/Slider.tsx": $$$$$$$$7,
+    "deco-sites/kawsar-design/sections/SliderInfinite.tsx": $$$$$$$$7,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,
@@ -91,7 +95,6 @@ const manifest = {
     "$live/flags/audience.ts": i1$$$$$0,
     "$live/flags/everyone.ts": i1$$$$$1,
   },
-  "islands": {},
   "config": config,
   "baseUrl": import.meta.url,
 };

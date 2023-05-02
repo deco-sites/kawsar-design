@@ -553,45 +553,37 @@
       ],
       "title": "deco-sites/kawsar-design/components/Main/Services.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos": {
-      "type": "object",
-      "properties": {
-        "link": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Link"
-        },
-        "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Image"
-        }
-      },
-      "required": [
-        "image"
-      ],
-      "title": "MediasLogos"
-    },
-    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos"
-      },
-      "title": "MediasLogos[]"
-    },
-    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@Props": {
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXJJbmZpbml0ZS50c3g=@Props": {
       "type": "object",
       "properties": {
         "media": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@MediasLogos[]",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image"
+              },
+              "link": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Link"
+              }
+            },
+            "required": [
+              "image"
+            ]
+          },
           "title": "Media"
         }
       },
       "required": [
         "media"
       ],
-      "title": "deco-sites/kawsar-design/components/Main/Slider.tsx@Props"
+      "title": "deco-sites/kawsar-design/components/Main/SliderInfinite.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -791,6 +783,22 @@
             "deco-sites/kawsar-design/functions/LoadGitHubRaw.ts"
           ],
           "default": "deco-sites/kawsar-design/functions/LoadGitHubRaw.ts"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL1NsaWRlci50c3g=": {
+      "title": "./islands/Slider.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Slider.tsx"
+          ],
+          "default": "./islands/Slider.tsx"
         }
       }
     },
@@ -1109,12 +1117,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NsaWRlci50c3g=": {
-      "title": "deco-sites/kawsar-design/sections/Slider.tsx",
+    "ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NsaWRlckluZmluaXRlLnRzeA==": {
+      "title": "deco-sites/kawsar-design/sections/SliderInfinite.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXIudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL2NvbXBvbmVudHMvTWFpbi9TbGlkZXJJbmZpbml0ZS50c3g=@Props"
         }
       ],
       "required": [
@@ -1124,9 +1132,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/kawsar-design/sections/Slider.tsx"
+            "deco-sites/kawsar-design/sections/SliderInfinite.tsx"
           ],
-          "default": "deco-sites/kawsar-design/sections/Slider.tsx"
+          "default": "deco-sites/kawsar-design/sections/SliderInfinite.tsx"
         }
       }
     },
@@ -1360,6 +1368,17 @@
         }
       ]
     },
+    "islands": {
+      "title": "islands",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlci50c3g="
+        }
+      ]
+    },
     "handlers": {
       "title": "handlers",
       "anyOf": [
@@ -1428,7 +1447,7 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NlcnZpY2VzLnRzeA=="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NsaWRlci50c3g="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9rYXdzYXItZGVzaWduL3NlY3Rpb25zL1NsaWRlckluZmluaXRlLnRzeA=="
         }
       ]
     },
@@ -1516,6 +1535,9 @@
         "anyOf": [
           {
             "$ref": "#/root/functions"
+          },
+          {
+            "$ref": "#/root/islands"
           },
           {
             "$ref": "#/root/handlers"

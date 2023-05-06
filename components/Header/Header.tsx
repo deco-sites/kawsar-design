@@ -27,13 +27,13 @@ export default function Header(props: Props) {
         <nav class="flex items-center justify-between w-full h-[60px] text-sm text-secundary md:h-[80px] border-b border-gray-800">
           <a href={props.link_logo} class="flex items-center pl-[12px]">
             <img src={props.logo} alt="Logo" class="h-5" />
-            <span class="pl-[12px] hover:text-gray-00 font-semibold hover:text-gray-400">
+            <span class="pl-[12px] hover:text-gray-00hover:text-gray-400">
               {props.text_logo}
             </span>
           </a>
 
           <div class="flex items-center justify-end">
-            <ul class="flex pr-[12px] font-semibold">
+            <ul class="flex pr-[12px] md:gap-5">
               {linksList.map((props) => (
                 <Navlink
                   link={props.link}

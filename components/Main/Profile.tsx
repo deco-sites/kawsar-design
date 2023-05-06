@@ -13,7 +13,7 @@ export interface Props {
 export default function Profile(props: Props) {
   return (
     <section>
-      <main class="w-full bg-primary border-b border-gray-800">
+      <main class="w-full bg-primary">
         <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary md:px-24">
           <div class="py-8">
             <img
@@ -32,7 +32,7 @@ export default function Profile(props: Props) {
           </h1>
 
           <div class="flex items-center justify-center text-[16px]">
-            <button class="bg-primary rounded-sm border w-[216px] h-[69px] transition-all duration-500 ease-in-out hover:scale-90">
+            <button class="bg-primary rounded-sm border border-gray-800 w-[210px] h-[60px] transition-all duration-500 ease-in-out hover:scale-90">
               <a
                 href={props.buttonURL}
                 target="_blank"

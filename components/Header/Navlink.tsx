@@ -1,4 +1,4 @@
-import { VNode } from "preact";
+import Image from 'deco-sites/std/components/Image.tsx';
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
@@ -8,18 +8,18 @@ export interface Props {
   svg_logos: LiveImage;
 }
 
-export default function Navlink({ link, title, svg_logos }: Props): VNode {
+export default function Navlink({ link, title, svg_logos }: Props) {
   return (
     <li class="flex items-center">
       <a
         href={link}
         target="_blank"
-        class="flex items-center justify-center hover:text-gray-400"
+        class="flex items-center justify-center p-2 hover:text-gray-400"
       >
-        <span class="flex hidden md:block pr-[12px]">
+        <span class="flex hidden md:block">
           {title}
         </span>
-        <img src={svg_logos} alt="Logos" class="md:hidden h-4 pr-[12px] " />
+        <Image src={svg_logos} alt="Logo" width={16} height={16} class="md:hidden "/>
       </a>
     </li>
   );

@@ -491,9 +491,9 @@
           "type": "string",
           "title": "Profile Text"
         },
-        "button": {
+        "buttonText": {
           "type": "string",
-          "title": "Button"
+          "title": "Button Text"
         },
         "buttonURL": {
           "type": "string",
@@ -508,8 +508,9 @@
         "profileImage",
         "profileTitle",
         "profileText",
-        "button",
-        "buttonURL"
+        "buttonText",
+        "buttonURL",
+        "buttonIcon"
       ],
       "title": "deco-sites/kawsar-design/components/Main/Profile.tsx@Props"
     },

@@ -1,8 +1,9 @@
-import { useState } from "preact/hooks";
+import Image from 'deco-sites/std/components/Image.tsx';
+import { useState } from 'preact/hooks';
+
+import Navlink from './Navlink.tsx';
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Navlink from "./Navlink.tsx";
-
 export interface Props {
   logo: LiveImage;
   link_logo?: string;
@@ -24,10 +25,10 @@ export default function Header(props: Props) {
   return (
     <header class="w-full flex items-center bg-primary">
       <div class="mx-auto w-full lg:px-20">
-        <nav class="flex items-center justify-between w-full h-[60px] text-sm text-secundary md:h-[80px] border-b border-gray-800">
+        <nav class="flex items-center justify-between w-full h-[60px] text-sm font-semibold text-secundary md:h-[80px] border-b border-gray-800">
           <a href={props.link_logo} class="flex items-center pl-[12px]">
-            <img src={props.logo} alt="Logo" class="h-5" />
-            <span class="pl-[12px] hover:text-gray-00hover:text-gray-400">
+            <Image src={props.logo} alt="Logo" width={20} height={20}/>
+            <span class="pl-[12px] hover:text-gray-400">
               {props.text_logo}
             </span>
           </a>

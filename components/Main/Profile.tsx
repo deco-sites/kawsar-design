@@ -5,9 +5,9 @@ export interface Props {
   profileImage: LiveImage;
   profileTitle: string;
   profileText: string;
-  button: string;
+  buttonText: string;
   buttonURL: string;
-  buttonIcon?: LiveImage;
+  buttonIcon: LiveImage;
 }
 
 export default function Profile(props: Props) {
@@ -16,14 +16,10 @@ export default function Profile(props: Props) {
       <main class="w-full bg-primary">
         <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary md:px-24">
           <div class="py-8">
-            <img
-              src={props.profileImage}
-              alt="Photo Profile"
-              class="inline-block text-center w-32 h-32 rounded-full"
-            />
+            <Image src={props.profileImage} alt="Photo Profile" width={128} height={128} class="inline-block text-center rounded-full"/>
           </div>
 
-          <div class="pb-4">
+          <div class="pb-4 font-semibold">
             <span>{props.profileTitle}</span>
           </div>
 
@@ -38,9 +34,10 @@ export default function Profile(props: Props) {
                 target="_blank"
                 class="flex justify-center items-center"
               >
-                <span>{props.button}</span>
+                <span class="font-semibold">{props.buttonText}</span>
 
-                <img src={props.buttonIcon} class="ml-2 h-4" />
+                <Image src={props.buttonIcon} alt="Button Icon" width={16} height={16} class="ml-2" />
+                
               </a>
             </button>
           </div>

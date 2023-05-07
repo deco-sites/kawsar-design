@@ -11,8 +11,8 @@ export interface Props {
 }
 
 export default function HeadComponent({
-  title = "deco.cx — starter site",
-  description = "Deliver complete commerce experiences — start here!",
+  title = "Kawsar Amed - Product Designer",
+  description = "Building digital products, brands, and experience.",
   url = "https://start.deco.site",
   imageUrl = "https://deco.cx/images/deco-logo-light.png",
   faviconUrl = "",

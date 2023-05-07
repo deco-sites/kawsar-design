@@ -22,13 +22,13 @@ export default function Footer(props: Props) {
   return (
     <footer class="w-full flex items-center bg-primary">
       <div class="mx-auto w-full lg:px-20">
-        <div class="flex items-center justify-between w-full h-[60px] text-sm text-secundary font-semibold md:h-[80px] border-t border-gray-800">
-          <span class="copyright pl-[12px]">
+        <div class="flex items-center justify-between w-full h-[60px] text-sm text-secundary md:h-[80px] border-t border-gray-800">
+          <span class="flex items-center pl-[12px]">
             {props.copyright}
           </span>
 
           <div class="flex items-center justify-end">
-            <ul class="flex pr-[12px]">
+            <ul class="flex pr-[12px] md:gap-5">
               {linksList.map((props) => (
                 <FooterLink
                   link={props.link}

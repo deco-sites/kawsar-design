@@ -19,7 +19,7 @@ export default function Services({ serviceText, card }: Props) {
     <section>
       <div class="w-full bg-primary ">
         <div class="py-32 relative">
-          <h3 class="pb-10 text-2xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
+          <h3 class="pb-10 text-2xl sm:text-4xl text-center bg-gradient-to-r from-white to-gray-700 text-transparent bg-clip-text">
             {serviceText}
           </h3>
 

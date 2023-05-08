@@ -14,7 +14,7 @@ export default function Navlink({ link, title, svg_logos }: Props) {
       <a
         href={link}
         target="_blank"
-        class="flex items-center justify-center p-2 hover:text-gray-400"
+        class="flex items-center justify-center pl-4 hover:text-gray-400"
       >
         <span class="flex hidden md:block">
           {title}

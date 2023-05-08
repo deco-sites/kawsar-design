@@ -5,7 +5,7 @@ export interface Props {
   profileText: string;
   button: string;
   buttonURL: string;
-  buttonIcon?: LiveImage;
+  buttonIcon: LiveImage;
 }
 
 export default function NextProject(props: Props) {
@@ -22,11 +22,11 @@ export default function NextProject(props: Props) {
               <a
                 href={props.buttonURL}
                 target="_blank"
-                class="flex justify-center items-center"
+                class="flex justify-center font-semibold items-center"
               >
                 <span>{props.button}</span>
 
-                <img src={props.buttonIcon} class="ml-2 h-4" />
+                <Image src={props.buttonIcon} alt="Button Icon" width={16} height={16} class="ml-2" />
               </a>
             </button>
           </div>

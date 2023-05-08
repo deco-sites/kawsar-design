@@ -472,7 +472,8 @@
       "required": [
         "profileText",
         "button",
-        "buttonURL"
+        "buttonURL",
+        "buttonIcon"
       ],
       "title": "deco-sites/kawsar-design/components/Main/NextProject.tsx@Props"
     },

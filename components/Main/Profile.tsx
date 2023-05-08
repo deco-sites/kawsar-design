@@ -27,7 +27,7 @@ export default function Profile(props: Props) {
             {props.profileText}
           </h1>
 
-          <div class="flex items-center justify-center text-[16px]">
+          <div class="flex items-center justify-center text-[16px] pb-8">
             <button class="bg-primary rounded-sm border border-gray-800 w-[210px] h-[60px] transition-all duration-500 ease-in-out hover:scale-90">
               <a
                 href={props.buttonURL}

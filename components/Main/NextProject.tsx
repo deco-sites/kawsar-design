@@ -26,7 +26,13 @@ export default function NextProject(props: Props) {
               >
                 <span>{props.button}</span>
 
-                <Image src={props.buttonIcon} alt="Button Icon" width={16} height={16} class="ml-2" />
+                <Image
+                  src={props.buttonIcon}
+                  alt="Button Icon"
+                  width={16}
+                  height={16}
+                  class="ml-2"
+                />
               </a>
             </button>
           </div>

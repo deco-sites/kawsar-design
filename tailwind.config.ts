@@ -1,6 +1,8 @@
-/** @type {import('$fresh/plugins/twind').Options} */
 export default {
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       screens: {
         sm: "640px",

@@ -1,4 +1,4 @@
-import Image from 'deco-sites/std/components/Image.tsx';
+import Image from "deco-sites/std/components/Image.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
@@ -19,7 +19,13 @@ export default function Navlink({ link, title, svg_logos }: Props) {
         <span class="flex hidden md:block">
           {title}
         </span>
-        <Image src={svg_logos} alt="Logo" width={16} height={16} class="md:hidden "/>
+        <Image
+          src={svg_logos}
+          alt="Logo"
+          width={16}
+          height={16}
+          class="md:hidden "
+        />
       </a>
     </li>
   );

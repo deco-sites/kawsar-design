@@ -1,8 +1,7 @@
-import Image from 'deco-sites/std/components/Image.tsx';
-import { useId } from 'preact/hooks';
+import Image from "deco-sites/std/components/Image.tsx";
+import { useId } from "preact/hooks";
 
-import Slider from '../../islands/Slider.tsx';
-
+import Slider from "../../islands/Slider.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
@@ -10,11 +9,9 @@ export interface Props {
   media: { image: LiveImage; link?: string }[];
 }
 
-
 export default function SliderInfinite({ media }: Props) {
   let id = useId();
   id += "media-query";
-
 
   return (
     <div
@@ -22,10 +19,12 @@ export default function SliderInfinite({ media }: Props) {
       class="max-w-full m-auto w-full relative bg-primary py-14 border-t border-b border-gray-800 overflow-hidden"
     >
       <div
-        class={`flex justify-between transition w-[${
-          media.length * 1 * 100
-        }%] md:w-[${media.length * 2 * 14.3}%]`}
+        class={`flex justify-between transition w-[var(--w)] md:w-[var(--w-md)]`}
         data-slider-content
+        style={{
+          "--w": `${media.length * 1 * 100}%`,
+          "--w-md": `${media.length * 2 * 14.3}%`,
+        }}
       >
         {media.map((item, idx) => {
           return (
@@ -33,8 +32,13 @@ export default function SliderInfinite({ media }: Props) {
               id={`${id}-${idx}`}
               class="w-[100%] md:w-[20%] flex items-center justify-center h-10"
             >
-                <Image src={item.image} alt="Logos" width={100} height={40} class="object-contain" />
-
+              <Image
+                src={item.image}
+                alt="Logos"
+                width={100}
+                height={40}
+                class="object-contain"
+              />
             </div>
           );
         })}

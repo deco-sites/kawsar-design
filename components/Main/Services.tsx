@@ -39,8 +39,15 @@ export default function Services({ serviceText, card }: Props) {
                       class="grid grid-cols-1 h-80 lg:(h-[340px] w-[260px]) border border-gray-800 rounded-sm pl-4 pb-8"
                     >
                       <div class="flex flex-col justify-end items-start text-secundary mr-2">
-                        <Image src={card.cardImg} alt="Icons Cards" width={32} height={32} />
-                        <h4 class="bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text font-semibold mt-5">{card.cardTitle}</h4>
+                        <Image
+                          src={card.cardImg}
+                          alt="Icons Cards"
+                          width={32}
+                          height={32}
+                        />
+                        <h4 class="bg-gradient-to-r from-white to-gray-500 text-transparent bg-clip-text font-semibold mt-5">
+                          {card.cardTitle}
+                        </h4>
                         <p class="text-sm overflow-hidden overflow-ellipsis mb-4 mt-5 whitespace-pre-line">
                           {card.cardText}
                         </p>

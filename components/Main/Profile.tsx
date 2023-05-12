@@ -16,7 +16,13 @@ export default function Profile(props: Props) {
       <main class="w-full bg-primary">
         <div class="mx-auto flex flex-wrap relative items-center justify-center flex-col py-12 text-sm text-secundary md:px-24">
           <div class="py-8">
-            <Image src={props.profileImage} alt="Photo Profile" width={128} height={128} class="inline-block text-center rounded-full"/>
+            <Image
+              src={props.profileImage}
+              alt="Photo Profile"
+              width={128}
+              height={128}
+              class="inline-block text-center rounded-full"
+            />
           </div>
 
           <div class="pb-4 font-semibold">
@@ -36,8 +42,13 @@ export default function Profile(props: Props) {
               >
                 <span class="font-semibold">{props.buttonText}</span>
 
-                <Image src={props.buttonIcon} alt="Button Icon" width={16} height={16} class="ml-2" />
-                
+                <Image
+                  src={props.buttonIcon}
+                  alt="Button Icon"
+                  width={16}
+                  height={16}
+                  class="ml-2"
+                />
               </a>
             </button>
           </div>

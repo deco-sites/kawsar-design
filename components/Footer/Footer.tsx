@@ -1,6 +1,6 @@
-import { useState } from 'preact/hooks';
+import { useState } from "preact/hooks";
 
-import FooterLink from './FooterLink.tsx';
+import FooterLink from "./FooterLink.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 export interface Props {
